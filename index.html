@@ -1,332 +1,159 @@
 <!DOCTYPE html>
 <html lang="hi">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>गांव की क्लास - बिहार बोर्ड कक्षा 10</title>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RRD6D4FK99"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-RRD6D4FK99');
-</script>
-  <meta name="description" content="गांव की क्लास - बिहार बोर्ड कक्षा 10 के लिए सरल और समझने में आसान वीडियो ट्यूटोरियल और अध्ययन सामग्री।">
-  <meta name="keywords" content="बिहार बोर्ड, कक्षा 10, वीडियो ट्यूटोरियल, अध्ययन सामग्री, गणित, विज्ञान, हिंदी, सामाजिक विज्ञान">
-  <meta name="author" content="Rahul Kumar">
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
-  <style>
-    /* आपका मौजूदा CSS यहाँ रहेगा (जैसा आपने दिया है) */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to right, #1d2671, #c33764);
-      color: white;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      min-height: 100vh;
-      padding: 20px;
-    }
-
-    header {
-      text-align: center;
-      margin-bottom: 20px;
-      animation: fadeInDown 1s ease forwards;
-    }
-
-    header h1 {
-      font-size: 2.8rem;
-      color: #ffcc00;
-      text-shadow: 2px 2px 8px #000;
-    }
-
-    header p {
-      margin-top: 10px;
-      font-size: 1.1rem;
-      color: #ffee99;
-    }
-
-    main {
-      width: 100%;
-      max-width: 900px;
-      animation: fadeInUp 1s ease forwards;
-    }
-
-    .video-container {
-      position: relative;
-      padding-bottom: 56.25%;
-      height: 0;
-      overflow: hidden;
-      border-radius: 15px;
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
-      margin-bottom: 30px;
-    }
-
-    .video-container iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
-
-    .subject-section {
-      margin-bottom: 40px;
-    }
-
-    .subject-title {
-      font-size: 1.5rem;
-      margin-bottom: 15px;
-      color: #ffff99;
-      text-shadow: 1px 1px 5px #000;
-    }
-
-    .btn-group {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
-      justify-content: center;
-      margin-bottom: 15px;
-    }
-
-    .btn {
-      background: #ffcc00;
-      color: #000;
-      padding: 12px 25px;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: bold;
-      box-shadow: 0 4px 12px rgba(255, 204, 0, 0.5);
-      transition: all 0.3s ease;
-      font-size: 1rem;
-      cursor: pointer;
-      border: none;
-    }
-
-    .btn:hover {
-      background: #fff000;
-      transform: scale(1.05);
-    }
-
-    footer {
-      margin-top: 40px;
-      text-align: center;
-      font-size: 0.9rem;
-      color: #ffeeaa;
-    }
-
-    @keyframes fadeInDown {
-      from {
-        opacity: 0;
-        transform: translateY(-20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2rem;
-      }
-
-      .btn {
-        width: 100%;
-        text-align: center;
-      }
-    }
-     #whatsapp-chat {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #25D366;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
-    cursor: pointer;
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  #whatsapp-chat img {
-    width: 35px;
-    height: 35px;
-  }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>गांव की क्लास</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
 
-  <header>
-    <h1>गांव की क्लास</h1>
-    <p>बिहार बोर्ड कक्षा 10 - सभी विषयों के आसान वीडियो ट्यूटोरियल</p>
+<body class="bg-blue-50 text-gray-900">
+  <!-- Header with Navigation -->
+  <header class="bg-blue-900 sticky top-0 z-50 shadow-md">
+    <div class="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
+      <h1 class="text-3xl font-extrabold text-white">गांव की क्लास</h1>
+
+      <!-- Navigation Menu -->
+      <nav class="hidden md:flex space-x-6 text-yellow-400 font-semibold">
+        <a href="#" class="hover:text-yellow-300">Home</a>
+        <a href="#" class="hover:text-yellow-300">Test</a>
+        <a href="#" class="hover:text-yellow-300">Study Material</a>
+        <a href="#" class="hover:text-yellow-300">Result</a>
+        <a href="#" class="hover:text-yellow-300">Contact</a>
+      </nav>
+
+      <!-- Registration Button -->
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdxf96-g-2iTWHtUmkr8Z3i_SGSbebiq_ZZVHTV-gXxqna_4Q/viewform?usp=header"
+        target="_blank"
+        class="bg-yellow-400 text-blue-900 px-5 py-2 rounded hover:bg-yellow-300 transition font-semibold ml-4 whitespace-nowrap">
+        रजिस्ट्रेशन करें
+      </a>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div class="md:hidden bg-blue-800">
+      <button id="mobile-menu-button" class="w-full text-yellow-400 font-semibold py-3 text-center">
+        मेनू ▼
+      </button>
+      <nav id="mobile-menu" class="hidden flex flex-col space-y-2 px-6 pb-4 text-yellow-400 font-semibold">
+        <a href="#" class="hover:text-yellow-300">Home</a>
+        <a href="#" class="hover:text-yellow-300">Test</a>
+        <a href="#" class="hover:text-yellow-300">Study Material</a>
+        <a href="#" class="hover:text-yellow-300">Result</a>
+        <a href="#" class="hover:text-yellow-300">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
+  <!-- Hero Section -->
+  <section class="bg-blue-200 py-12 text-center">
+    <h2 class="text-4xl font-bold mb-4 text-blue-900">अपने गांव में पढ़ाई को आसान बनाएं</h2>
+    <p class="max-w-xl mx-auto mb-6 text-lg text-blue-800">कक्षा 10 के लिए सरल हिंदी में विज्ञान, गणित, सामाजिक विज्ञान और हिंदी के अध्यायों के साथ जुड़ें।</p>
+    <a href="#chapters" class="inline-block bg-yellow-400 text-blue-900 px-6 py-3 rounded hover:bg-yellow-300 transition font-semibold">अध्याय देखें</a>
+  </section>
 
-   <!-- TEST SERIES SECTION -->
-   <div class="subject-section">
-    <div class="subject-title">🧪 टेस्ट सीरीज (Test Series)</div>
-    <div class="btn-group">
-      <button class="btn" onclick="checkPassword('https://your-link.com/test-series-science')">Science Test</button>
-      <button class="btn" onclick="checkPassword('https://your-link.com/test-series-math')">Math Test</button>
-      <button class="btn" onclick="checkPassword('https://your-link.com/test-series-full')">Full Syllabus Test</button>
+  <!-- Chapters Section -->
+  <main id="chapters" class="max-w-4xl mx-auto p-6">
+    <h2 class="text-3xl font-bold mb-8 text-center text-blue-900">कक्षा 10 - विषयवार अध्याय</h2>
+
+    <div class="space-y-6">
+      <!-- Science -->
+      <div class="border border-blue-400 rounded-lg shadow-sm hover:shadow-lg transition">
+        <button onclick="togglePanel('sciencePanel')" class="w-full text-left px-6 py-3 bg-blue-100 font-semibold text-blue-900 rounded-t-lg">
+          विज्ञान (Science)
+        </button>
+        <div id="sciencePanel" class="hidden px-6 py-4 space-y-3 bg-blue-50 rounded-b-lg">
+          <p>विज्ञान के ये अध्याय आपको सरल भाषा में महत्वपूर्ण कांसेप्ट समझाएंगे।</p>
+          <ul class="list-disc list-inside space-y-1 text-blue-900">
+            <li><a href="#" class="hover:underline">अध्याय 1: ...</a></li>
+            <li><a href="#" class="hover:underline">अध्याय 2: ...</a></li>
+            <li><a href="#" class="hover:underline">अध्याय 3: ...</a></li>
+            <li><a href="#" class="hover:underline">अध्याय 4: ...</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Math -->
+      <div class="border border-blue-400 rounded-lg shadow-sm hover:shadow-lg transition">
+        <button onclick="togglePanel('mathPanel')" class="w-full text-left px-6 py-3 bg-blue-100 font-semibold text-blue-900 rounded-t-lg">
+          गणित (Math)
+        </button>
+        <div id="mathPanel" class="hidden px-6 py-4 space-y-3 bg-blue-50 rounded-b-lg">
+          <p>गणित के सरल और व्यावहारिक प्रश्न जो परीक्षा में मदद करेंगे।</p>
+          <ul class="list-disc list-inside space-y-1 text-blue-900">
+            <li><a href="#" class="hover:underline">अध्याय 1: ...</a></li>
+            <li><a href="#" class="hover:underline">अध्याय 2: ...</a></li>
+            <li><a href="#" class="hover:underline">अध्याय 3: ...</a></li>
+            <li><a href="#" class="hover:underline">अध्याय 4: ...</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- SST -->
+      <div class="border border-blue-400 rounded-lg shadow-sm hover:shadow-lg transition">
+        <button onclick="togglePanel('sstPanel')" class="w-full text-left px-6 py-3 bg-blue-100 font-semibold text-blue-900 rounded-t-lg">
+          सामाजिक विज्ञान (SST)
+        </button>
+        <div id="sstPanel" class="hidden px-6 py-4 space-y-3 bg-blue-50 rounded-b-lg">
+          <p>इतिहास, भूगोल और नागरिक शास्त्र के महत्वपूर्ण टॉपिक्स।</p>
+          <ul class="list-disc list-inside space-y-1 text-blue-900">
+            <li><a href="#" class="hover:underline">अध्याय 1: ...</a></li>
+            <li><a href="#" class="hover:underline">अध्याय 2: ...</a></li>
+            <li><a href="#" class="hover:underline">अध्याय 3: ...</a></li>
+            <li><a href="#" class="hover:underline">अध्याय 4: ...</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Hindi -->
+      <div class="border border-blue-400 rounded-lg shadow-sm hover:shadow-lg transition">
+        <button onclick="togglePanel('hindiPanel')" class="w-full text-left px-6 py-3 bg-blue-100 font-semibold text-blue-900 rounded-t-lg">
+          हिंदी (Hindi)
+        </button>
+        <div id="hindiPanel" class="hidden px-6 py-4 space-y-3 bg-blue-50 rounded-b-lg">
+          <p>हिंदी भाषा और साहित्य के महत्वपूर्ण अध्याय।</p>
+          <ul class="list-disc list-inside space-y-1 text-blue-900">
+            <li><a href="#" class="hover:underline">अध्याय 1: ...</a></li>
+            <li><a href="#" class="hover:underline">अध्याय 2: ...</a></li>
+            <li><a href="#" class="hover:underline">अध्याय 3: ...</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
-   </div>
-
-   <!-- STUDY MATERIAL SECTION -->
-   <div class="subject-section">
-    <div class="subject-title">📖 अध्ययन सामग्री (Study Material)</div>
-    <div class="btn-group">
-      <button class="btn" onclick="checkPassword('https://your-link.com/study-material-science')">Science Notes PDF</button>
-      <button class="btn" onclick="checkPassword('https://your-link.com/study-material-math')">Math Notes PDF</button>
-      <button class="btn" onclick="checkPassword('https://your-link.com/study-material-all')">All Subjects Notes</button>
-    </div>
-   </div>
-
-    <!-- Intro Video -->
-    <div class="video-container">
-      <iframe 
-        src="https://www.youtube.com/embed/YOUR_VIDEO_ID" 
-        title="Intro Video" 
-        allowfullscreen
-      ></iframe>
-    </div>
-
-    <!-- SUBJECTS WITH CHAPTERS -->
-
-    <!-- Science -->
-    <h2>🔬 विज्ञान (Science)</h2>
-    <div class="btn-group">
-      <button class="btn" onclick="checkPassword('https://your-link.com/chemical-reactions')">रसायन में हमारी दिनचर्या</button>
-      <button class="btn" onclick="checkPassword('https://your-link.com/acids-bases')">अम्ल, क्षार और लवण</button>
-      <button class="btn" onclick="checkPassword('https://your-link.com/metals-nonmetals')">धातु और अधातु</button>
-      <button class="btn" onclick="checkPassword('https://your-link.com/carbon-compounds')">कार्बन और उसके यौगिक</button>
-      <button class="btn" onclick="checkPassword('https://your-link.com/periodic-table')">परमाणु वर्गीकरण</button>
-      <button class="btn" onclick="checkPassword('https://your-link.com/life-processes')">जीवन क्रियाएँ</button>
-      <button class="btn" onclick="checkPassword('https://your-link.com/control-coordination')">नियंत्रण और समन्वय</button>
-      <button class="btn" onclick="checkPassword('https://your-link.com/light')">प्रकाश</button>
-      <button class="btn" onclick="checkPassword('https://your-link.com/electricity')">विद्युत धारा</button>
-      <button class="btn" onclick="checkPassword('https://your-link.com/magnetism')">चुंबकत्व</button>
-      <button class="btn" onclick="checkPassword('https://your-link.com/sources-energy')">ऊर्जा के स्रोत</button>
-      <button class="btn" onclick="checkPassword('https://your-link.com/environment')">पर्यावरण</button>
-      <button class="btn" onclick="checkPassword('https://your-link.com/pollution')">प्रदूषण</button>
-    </div>
-
-    <!-- Math -->
-    <h2>📐 गणित (Math)</h2>
-    <div class="btn-group">
-      <button class="btn" onclick="checkPassword('https://your-link.com/real-numbers')">वास्तविक संख्याएँ</button>
-      <button class="btn" onclick="checkPassword('https://your-link.com/polynomials')">बहुपद</button>
-      <button class="btn" onclick="checkPassword('https://your-link.com/linear-equations')">दो चरों वाले द्विघातीय समीकरण</button>
-      <button class="btn" onclick="checkPassword('https://your-link.com/quadratic-equations')">द्विघातीय समीकरण</button>
-      <button class="btn" onclick="checkPassword('https://your-link.com/arithmetic-progression')">सांख्यिकीय श्रेणी</button>
-      <button class="btn" onclick="checkPassword('https://your-link.com/triangles')">त्रिकोणमिति</button>
-      <button class="btn" onclick="checkPassword('https://your-link.com/coordinate-geometry')">निर्देशांक ज्यामिति</button>
-      <button class="btn" onclick="checkPassword('https://your-link.com/trigonometry-intro')">त्रिकोणमिति परिचय</button>
-      <button class="btn" onclick="checkPassword('https://your-link.com/circles')">वृत्त</button>
-      <button class="btn" onclick="checkPassword('https://your-link.com/constructions')">निर्माण</button>
-      <button class="btn" onclick="checkPassword('https://your-link.com/areas-related-circles')">वृत्त से संबंधित क्षेत्रफल</button>
-      <button class="btn" onclick="checkPassword('https://your-link.com/surface-volumes')">पृष्ठीय क्षेत्र और आयतन</button>
-      <button class="btn" onclick="checkPassword('https://your-link.com/statistics')">सांख्यिकी</button>
-      <button class="btn" onclick="checkPassword('https://your-link.com/probability')">प्रायिकता</button>
-    </div>
-
-    <!-- Social Science -->
-    <h2>🌍 सामाजिक विज्ञान (Social Science)</h2>
-    <div class="btn-group">
-      <button class="btn" onclick="checkPassword('https://your-link.com/history-1')">औद्योगिकीकरण और उपनिवेशवाद</button>
-      <button class="btn" onclick="checkPassword('https://your-link.com/history-2')">स्वतंत्रता संग्राम</button>
-      <button class="btn" onclick="checkPassword('https://your-link.com/history-3')">आधुनिक भारत की राजनीति</button>
-      <button class="btn" onclick="checkPassword('https://your-link.com/geography-1')">संसाधन और विकास</button>
-      <button class="btn" onclick="checkPassword('https://your-link.com/geography-2')">जल संसाधन</button>
-      <button class="btn" onclick="checkPassword('https://your-link.com/geography-3')">कृषि</button>
-      <button class="btn" onclick="checkPassword('https://your-link.com/geography-4')">उद्योग</button>
-      <button class="btn" onclick="checkPassword('https://your-link.com/geography-5')">मानव संसाधन</button>
-      <button class="btn" onclick="checkPassword('https://your-link.com/political-1')">लोकतंत्र की अवधारणा</button>
-      <button class="btn" onclick="checkPassword('https://your-link.com/political-2')">लोकतंत्र और विकास</button>
-      <button class="btn" onclick="checkPassword('https://your-link.com/political-3')">शासन व्यवस्था</button>
-      <button class="btn" onclick="checkPassword('https://your-link.com/economics-1')">राष्ट्रीय आय</button>
-      <button class="btn" onclick="checkPassword('https://your-link.com/economics-2')">विकास के आयाम</button>
-    </div>
-
-    <!-- Hindi -->
-    <h2>📚 हिंदी (Hindi)</h2>
-    <div class="btn-group">
-      <button class="btn" onclick="checkPassword('https://your-link.com/hindi-chapter-1')">पाठ 1: क्षितिज पर सूर्य</button>
-      <button class="btn" onclick="checkPassword('https://your-link.com/hindi-chapter-2')">पाठ 2: मेरे हिस्से की धरती</button>
-      <button class="btn" onclick="checkPassword('https://your-link.com/hindi-chapter-3')">पाठ 3: नन्हीं चींटी की कहानी</button>
-      <button class="btn" onclick="checkPassword('https://your-link.com/hindi-chapter-4')">पाठ 4: एक फूल की चाह</button>
-      <button class="btn" onclick="checkPassword('https://your-link.com/hindi-chapter-5')">पाठ 5: मृगतृष्णा</button>
-      <button class="btn" onclick="checkPassword('https://your-link.com/hindi-chapter-6')">पाठ 6: वह सुबह कभी तो आएगी</button>
-      <button class="btn" onclick="checkPassword('https://your-link.com/hindi-chapter-7')">पाठ 7: विचारों के सागर में</button>
-      <button class="btn" onclick="checkPassword('https://your-link.com/hindi-chapter-8')">पाठ 8: नई दुनिया की ओर</button>
-      <button class="btn" onclick="checkPassword('https://your-link.com/hindi-chapter-9')">पाठ 9: स्वच्छ भारत अभियान</button>
-      <button class="btn" onclick="checkPassword('https://your-link.com/hindi-chapter-10')">पाठ 10: भारतीय संस्कृति</button>
-    </div>
-
   </main>
 
-  <footer>
-    &copy; 2025 गांव की क्लास | Designed by Rahul Kumar
+  <!-- Footer with social links -->
+  <footer class="bg-blue-900 mt-12 py-6 text-center text-yellow-400">
+    <p>© 2025 गांव की क्लास | Designed by Rahul Kumar</p>
+    <div class="mt-3 space-x-6 text-2xl">
+      <a href="#" title="WhatsApp" class="hover:text-green-500">📱</a>
+      <a href="#" title="Telegram" class="hover:text-blue-400">✈️</a>
+      <a href="#" title="YouTube" class="hover:text-red-600">▶️</a>
+    </div>
   </footer>
 
   <script>
-    function checkPassword(link) {
-      const correctPassword = "1234"; // अपना पासवर्ड यहां सेट करें
-      let attempts = 3;
-      while (attempts > 0) {
-        const userInput = prompt("पासवर्ड डालें:");
-        if (userInput === null) return; // उपयोगकर्ता ने कैंसिल किया
-        if (userInput === correctPassword) {
-          window.open(link, "_blank");
-          return;
-        } else {
-          attempts--;
-          alert(`गलत पासवर्ड। ${attempts} प्रयास बाकी।`);
-        }
-      }
-      alert("आपने अधिकतम प्रयास कर लिए।");
+    // Toggle chapter panels
+    function togglePanel(id) {
+      const panel = document.getElementById(id);
+      panel.classList.toggle("hidden");
     }
+
+    // Mobile menu toggle
+    const mobileMenuButton = document.getElementById("mobile-menu-button");
+    const mobileMenu = document.getElementById("mobile-menu");
+    mobileMenuButton.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+      // Toggle arrow icon
+      if (mobileMenu.classList.contains("hidden")) {
+        mobileMenuButton.textContent = "मेनू ▼";
+      } else {
+        mobileMenuButton.textContent = "मेनू ▲";
+      }
+    });
   </script>
-
-<!-- WhatsApp Chat Button -->
-
-
-<div id="whatsapp-chat" title="Chat with us on WhatsApp">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Icon" />
-</div>
-
-<script>
-  document.getElementById('whatsapp-chat').addEventListener('click', function() {
-    // Replace YOUR_NUMBER with your WhatsApp number in international format without +
-    const phoneNumber = "919876543210";
-    const message = encodeURIComponent("Hello! I visited your website and want to chat.");
-    const url = `https://wa.me/${phoneNumber}?text=${message}`;
-    window.open(url, '_blank');
-  });
-</script>
-
 </body>
+
 </html>
