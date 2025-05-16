@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>रजिस्ट्रेशन - गांव की क्लास</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+</head>
+<body class="bg-yellow-50 p-4">
+  <h1 class="text-3xl font-bold mb-6 text-center">छात्र रजिस्ट्रेशन फॉर्म</h1>
+  <form class="max-w-lg mx-auto bg-white p-6 rounded shadow" action="#" method="POST">
+    <label class="block mb-2 font-semibold">पूरा नाम</label>
+    <input type="text" name="fullName" required class="w-full mb-4 p-2 border rounded" placeholder="आपका नाम लिखें" />
+
+    <label class="block mb-2 font-semibold">ईमेल</label>
+    <input type="email" name="email" required class="w-full mb-4 p-2 border rounded" placeholder="आपका ईमेल" />
+
+    <label class="block mb-2 font-semibold">फोन नंबर</label>
+    <input type="tel" name="phone" required class="w-full mb-4 p-2 border rounded" placeholder="10 अंकों का नंबर" />
+
+    <label class="block mb-2 font-semibold">कक्षा</label>
+    <select name="class" required class="w-full mb-4 p-2 border rounded">
+      <option value="" disabled selected>कक्षा चुनें</option>
+      <option value="10">10</option>
+      <option value="9">9</option>
+      <option value="8">8</option>
+      <!-- Add more if needed -->
+    </select>
+
+    <label class="block mb-2 font-semibold">विषय</label>
+    <select name="subject" required class="w-full mb-4 p-2 border rounded">
+      <option value="" disabled selected>विषय चुनें</option>
+      <option value="Math">गणित</option>
+      <option value="Science">विज्ञान</option>
+      <option value="SST">सामाजिक विज्ञान</option>
+      <option value="Hindi">हिंदी</option>
+    </select>
+
+    <button type="submit" class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 w-full font-semibold">रजिस्टर करें</button>
+  </form>
+</body>
+</html>
